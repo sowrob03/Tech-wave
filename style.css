@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Shared style */
+.primary-bgcolor{
+    background-color:#1A0A2D;
+}
+#gradient{
+ background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.primary-btn{
+    color:#FFFFFF;
+    border-radius: 1000px;
+    padding:12px 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    border-style: none;
+    font-size:1rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.primary-btn button{
+    border-radius: 1000px;
+    
+}
+
+
+/* Header Section style */
+header{
+    max-width: 1280px;
+    max-height:70px;
+    margin: 0 auto;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-top: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size:1rem;
+    font-weight: 500;
+    color:#E7E6E9;
+    
+
+        
+}
+.nav-logo{
+    align-items:center;
+    color: white;
+    max-height:32px;
+    max-width: 219px;
+    font-size:2.8rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom:13px;
+}
+
+/* Banner section */
+#hero-banner{
+max-width: 1280px;
+background-image: url(./assets/hero-bg.png);
+size:cover;
+
+}
+/* Responsive design style */
