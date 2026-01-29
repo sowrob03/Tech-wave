@@ -18,7 +18,7 @@ section{
 }
 #gradient{
  background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .primary-btn{
@@ -151,6 +151,7 @@ background-size: cover;
     background: transparent;
     padding:12px 20px 12px 20px;
     margin-left: 4px;
+    cursor: pointer;
 }
 
 /* Banner Section End*/
@@ -219,11 +220,17 @@ background-size: cover;
     gap:30px;
     padding-bottom:120px;
     
-}
+    right: 20px;
+    }
+
+
 .layout{
     background-color:#290E4C;
     border-radius:40px;
     padding: 10px;
+    
+
+    
 
 }
 .big-column-box{

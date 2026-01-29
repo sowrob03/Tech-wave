@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Featured Episodes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #2b0a45, #12001f);
+  color: #fff;
+}
+
+/* Section */
+.episodes {
+  padding: 80px 6%;
+}
+
+.episodes h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+/* Layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.card {
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(180deg, #3a0f63, #220b3b);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Thumbnail */
+.thumb {
+  position: relative;
+  height: 200px;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play button */
+.play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff5edf, #8a2be2);
+}
+
+/* Content */
+.content {
+  padding: 22px;
+}
+
+.content h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.content p {
+  font-size: 14px;
+  opacity: .8;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+  </style>
+</head>
+<body>
+
+<section class="episodes">
+  <h2>Featured Episodes</h2>
+
+  <div class="cards">
+
+    <!-- Card 1 -->
+    <a class="card" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+      <div class="thumb">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="">
+        <span class="play">▶</span>
+      </div>
+      <div class="content">
+        <h3>The Future of AI in Everyday Life</h3>
+        <p>Exploring how artificial intelligence is transforming daily routines.</p>
+        <span class="time">🟢 42 min</span>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a class="card" href="https://www.youtube.com/watch?v=9No-FiEInLA" target="_blank">
+      <div class="thumb">
+        <img src="https://img.youtube.com/vi/9No-FiEInLA/maxresdefault.jpg" alt="">
+        <span class="play">▶</span>
+      </div>
+      <div class="content">
+        <h3>Building Better Habits for Remote Work</h3>
+        <p>Productivity strategies and work-life balance for remote teams.</p>
+        <span class="time">🟢 35 min</span>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a class="card" href="https://www.youtube.com/watch?v=Ke90Tje7VS0" target="_blank">
+      <div class="thumb">
+        <img src="https://img.youtube.com/vi/Ke90Tje7VS0/maxresdefault.jpg" alt="">
+        <span class="play">▶</span>
+      </div>
+      <div class="content">
+        <h3>Career Growth in Tech: A Roadmap</h3>
+        <p>From junior developer to senior leadership roles.</p>
+        <span class="time">🟢 51 min</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>
+
+
